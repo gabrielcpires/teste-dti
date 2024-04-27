@@ -1,0 +1,126 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#121212, #212b46);
+}
+
+.title{
+    font-size: 80px;
+    color: #fff;
+    animation: animationTitle 2s;
+    margin: 0 10px 0 10px;
+    text-align: center;
+}
+
+@keyframes animationTitle {
+    from{
+        transform: rotatex(50deg);
+    }to{
+        transform: rotate(0deg);
+    }
+}
+
+.containerInput{
+    background-color: rgba(255,255,255, 0.2);
+    padding: 15px;
+    margin: 34px 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 1px 3px 8px rgba(0,0,0,0.5);
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup label {
+  color: #fff;
+  margin-bottom: 8px;
+  margin: 10px 0 10px 0;
+}
+
+.containerInput input{
+    border: 0;
+    font-size: 20px;
+    outline: none;
+    margin-right: 8px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.buttonSearch{
+    margin-top: 20px;
+    background-color: #007bff;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.buttonSearch:hover{
+    background-color: #0056b3;
+}
+
+.buttonSearch:focus{
+    outline: none;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.main h2{
+    text-align: center;
+    margin: 16px 0;
+    font-size: 39px;
+}
+
+.main span{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+}
+
+@media (max-width: 620px){
+    .title{
+        font-size: 60px;
+    }
+
+    .main h2{
+        font-size: 28px;
+    }
+
+    .main{
+        width: 80%;
+        min-height: 250px;
+    }
+}
+
+.aviso{
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
+
+.destaque{
+    border-radius: 8px;
+    color: white;
+    background-color: #0056b3;
+    padding: 10px 0px 10px 0px;
+}
