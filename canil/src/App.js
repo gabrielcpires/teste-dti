@@ -24,12 +24,11 @@ function App() {
 
   const handleSearch = () => {
     if (!date || !cachorrosPequenos || !cachorrosGrandes) {
-      setAviso('Por favor, preencha todos os campos corretamente.');
+      setAviso('Preencha todos os campos corretamente.');
       return;
     }
 
     const diaSemana = new Date(date).getDay();
-
     const meuCaninoFelizPreco = calcularPreco('Meu Canino Feliz', diaSemana, cachorrosPequenos, cachorrosGrandes);
     const vaiRexPreco = calcularPreco('Vai Rex', diaSemana, cachorrosPequenos, cachorrosGrandes);
     const chowChawgasPreco = calcularPreco('ChowChawgas', diaSemana, cachorrosPequenos, cachorrosGrandes);
